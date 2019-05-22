@@ -30,6 +30,16 @@ async function createCourse(author) {
     return await course.save();
 }
 
+async function getCourses() {
+    const results = await Course
+        .find({ name: 'node.js' })
+        .limit(10)
+        .sort({ author: 1 })
+        .select({ name: 1, tags: 1});
+    debug(results);
+}
+
+getCourses();
 // createCourse('Jevgenij').then((res) => debug('created', res._id));
-// createCourse('Karolina').then((res) => debug('created', res._id));
+// createCourse('Karolina').then((res) => debug('created', res._id))
 
