@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "config": "^3.1.0",
-    "debug": "^4.1.1",
     "mongoose": "^5.5.10"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1"
   }
 }
