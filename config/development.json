@@ -1,0 +1,6 @@
+{
+    "environment": "development",
+    "server": {
+        "port": "27017"
+    }
+}
